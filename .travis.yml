@@ -1,6 +1,6 @@
 language: c
 python:
-  - "2.4"
+  - "3.13"
 compiler:
   - gcc
   - clang
