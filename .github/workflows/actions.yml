@@ -1,0 +1,14 @@
+name: Build QEMU STM32 project
+run-name: ${{ github.repository }}(${{ github.ref }}) running GitHub Actions 🚀
+on: [push]
+jobs:
+  build:
+    runs-on: "ubuntu-latest"
+    steps:
+    - uses: actions/checkout@v5
+      with:
+        submodules: true
+    - uses: actions/setup-python@v3
+      with:
+        python-version: '2.7'
+    - run: python my_script.py
